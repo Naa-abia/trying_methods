@@ -51,4 +51,20 @@ public class TryingMethods {
     // this is my second dynamic methods which will use a if statements to get an
     // answer of a string
 
+    void IfStatements(String day) {
+        if (day == "Monday") {
+            System.out.println("Hmmm it is " + day);
+        } else if (day == "Wednesday") {
+            System.out.println("It is" + day + ", Weekend is coming");
+        } else if (day == "Friday") {
+            System.out.println("Hurray...It is" + day + ",Let's have fun");
+        } else if (day == "Sunday") {
+            System.out.println("Eii...It is" + day + ",The Weekend is over");
+        } else {
+            System.out.println(day + "??, I don't know what day it is"); // if all the above conditions are false then
+                                                                         // the system should print this statement
+        }
+
+    }
+
 }
