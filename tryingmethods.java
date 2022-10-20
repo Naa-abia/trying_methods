@@ -86,8 +86,8 @@ public class TryingMethods {
 
     public static int sumEven() {
         int total = 0;
-        for(int i = 12; i < 103; i++){
-            if(i % 2 == 0){
+        for(int i = 12; i < 103; i++){   //where i is equal to 12 while < 103 and continues to add with an interval of 1
+            if(i % 2 == 0){    //if i is divided by 2 is 0 (modulas for even numbers)
                 total += i; // total = total + i
             }
         }
