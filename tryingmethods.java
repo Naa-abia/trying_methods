@@ -6,8 +6,10 @@ public class TryingMethods {
         TryingMethods mainClass = new TryingMethods(); // creating instance of a class to be able to invoke a dynamic
                                                        // method
         System.out.println(mainClass.DayOftheWeek(6));
-        mainClass.IfStatements("Friday"); // calling just the class because the method isnt asking for a return (void)
-                                          // hence calling just the method because im printing the statements.
+    mainClass.IfStatements("Friday");  /*calling just the class because the method isnt asking for a return (void)
+                                          hence calling just the method because im printing the statements.*/
+
+    System.out.println( addToThousand());                                  
 
     }
 
@@ -70,4 +72,16 @@ public class TryingMethods {
 
     }
 
+    public static int addToThousand(){
+
+        int num = 0;
+        int total = 0; //we are initialising the variable that will store the total ie. where it should start from 
+        while(num < 1000){
+            total += num;
+            num++; // num + 1
+        }
+        return total;
+    }
+
+    
 }
