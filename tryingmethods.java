@@ -6,6 +6,9 @@ public class TryingMethods {
         TryingMethods mainClass = new TryingMethods(); // creating instance of a class to be able to invoke a dynamic
                                                        // method
         System.out.println(mainClass.DayOftheWeek(6));
+        mainClass.IfStatements("Friday"); // calling just the class because the method isnt asking for a return (void)
+                                          // hence calling just the method because im printing the statements.
+
     }
 
     /*
@@ -55,11 +58,11 @@ public class TryingMethods {
         if (day == "Monday") {
             System.out.println("Hmmm it is " + day);
         } else if (day == "Wednesday") {
-            System.out.println("It is" + day + ", Weekend is coming");
+            System.out.println("It is " + day + ", Weekend is coming");
         } else if (day == "Friday") {
-            System.out.println("Hurray...It is" + day + ",Let's have fun");
+            System.out.println("Hurray...It is " + day + ",Let's have fun");
         } else if (day == "Sunday") {
-            System.out.println("Eii...It is" + day + ",The Weekend is over");
+            System.out.println("Eii...It is " + day + ",The Weekend is over");
         } else {
             System.out.println(day + "??, I don't know what day it is"); // if all the above conditions are false then
                                                                          // the system should print this statement
