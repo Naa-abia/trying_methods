@@ -1,15 +1,16 @@
 public class TryingMethods {
-    // this class is would be used to try the different methods
+    // this class would be used to try the different methods
     public static void main(String[] args) {
         // code to be executed
-        // DayOftheWeek(6);
         TryingMethods mainClass = new TryingMethods(); // creating instance of a class to be able to invoke a dynamic
                                                        // method
-        System.out.println(mainClass.DayOftheWeek(6));
-    mainClass.IfStatements("Friday");  /*calling just the class because the method isnt asking for a return (void)
+        System.out.println(mainClass.dayOftheWeek(6));
+        
+        mainClass.ifStatements("Friday");  /*calling just the class because the method isnt asking for a return (void)
                                           hence calling just the method because im printing the statements.*/
 
-    System.out.println( addToThousand());                                  
+        System.out.println( addToThousand());   
+        System.out.println( sumEven());                               
 
     }
 
@@ -18,7 +19,7 @@ public class TryingMethods {
      * Hence based on the value input , the method would return a specific day of
      * the week. This is cleaner than writing long if statements.
      */
-    String DayOftheWeek(int day) {
+    String dayOftheWeek(int day) {
         String dayName = " ";
         switch (day) {
             case 1:
@@ -56,7 +57,7 @@ public class TryingMethods {
     // this is my second dynamic methods which will use a if statements to get an
     // answer of a string
 
-    void IfStatements(String day) {
+    void ifStatements(String day) {
         if (day == "Monday") {
             System.out.println("Hmmm it is " + day);
         } else if (day == "Wednesday") {
@@ -83,5 +84,14 @@ public class TryingMethods {
         return total;
     }
 
-    
+    public static int sumEven() {
+        int total = 0;
+        for(int i = 12; i < 103; i++){   //where i is equal to 12 while < 103 and continues to add with an interval of 1
+            if(i % 2 == 0){    //if i is divided by 2 is 0 (modulas for even numbers)
+                total += i; // total = total + i
+            }
+        }
+        return total;
+        
+    }
 }
